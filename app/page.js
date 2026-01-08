@@ -82,8 +82,8 @@ export default function HangingList() {
               onClick={() => handleLevelChange(lvl)}
               disabled={status !== "idle"}
               className={`px-6 py-2 rounded-lg text-xs font-bold uppercase tracking-widest transition-all ${selectedLevel === lvl
-                  ? 'bg-yellow-500 text-black shadow-lg'
-                  : 'text-zinc-500 hover:text-white'
+                ? 'bg-yellow-500 text-black shadow-lg'
+                : 'text-zinc-500 hover:text-white'
                 } ${status !== "idle" ? "opacity-50 cursor-not-allowed" : ""}`}
             >
               {lvl}
@@ -170,25 +170,16 @@ export default function HangingList() {
           </div>
         </div>
 
-        <div className="mt-auto mb-10 animate-bounce text-zinc-600 text-xs uppercase tracking-[0.3em]">
+        <button
+          onClick={() => document.getElementById('benefits-section').scrollIntoView({ behavior: 'smooth' })}
+          className="mt-auto mb-10 animate-bounce text-zinc-600 text-xs uppercase tracking-[0.3em] hover:text-yellow-500 transition-colors"
+        >
           Scroll for benefits ↓
-        </div>
-        {/* Mevcut linki butona çeviriyoruz */}
-<button 
-  onClick={() => document.getElementById('benefits').scrollIntoView({ behavior: 'smooth' })}
-  className="mt-auto mb-10 animate-bounce text-zinc-600 text-xs uppercase tracking-[0.3em] hover:text-yellow-500 transition-colors"
->
-  Scroll for benefits ↓
-</button>
-
-{/* Benefits section'a ID ekliyoruz */}
-<section id="benefits" className="min-h-screen ..."></section>
-        
-        
+        </button>
       </section> {/* Bu ilk ekranın bitişi */}
 
       {/* 2. Bölüm: Benefits Section */}
-      <section className="min-h-screen w-full max-w-5xl py-20 px-6 border-t border-zinc-900">
+      <section id="benefits-section" className="min-h-screen w-full max-w-5xl py-20 px-6 border-t border-zinc-900 scroll-mt-20">
         <h2 className="text-4xl md:text-6xl font-black text-white uppercase italic mb-12 tracking-tighter">
           The <span className="text-yellow-500">benefits</span>
         </h2>
@@ -216,7 +207,7 @@ export default function HangingList() {
           <div className="bg-zinc-900/30 border border-zinc-800 p-8 rounded-3xl hover:border-yellow-500/50 transition-colors">
             <div className="text-yellow-500 text-3xl mb-4 font-black">🧠</div>
             <h3 className="text-xl font-bold mb-4 uppercase tracking-wider">Mental Focus
-</h3>
+            </h3>
             <p className="text-zinc-400 leading-relaxed">
               Boost mental focus by acting as a form of active meditation, teaching you to stay calm under physical discomfort, building willpower, and improving breath control, which carries over into everyday stress management and concentration
             </p>
