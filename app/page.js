@@ -173,6 +173,18 @@ export default function HangingList() {
         <div className="mt-auto mb-10 animate-bounce text-zinc-600 text-xs uppercase tracking-[0.3em]">
           Scroll for benefits ↓
         </div>
+        {/* Mevcut linki butona çeviriyoruz */}
+<button 
+  onClick={() => document.getElementById('benefits').scrollIntoView({ behavior: 'smooth' })}
+  className="mt-auto mb-10 animate-bounce text-zinc-600 text-xs uppercase tracking-[0.3em] hover:text-yellow-500 transition-colors"
+>
+  Scroll for benefits ↓
+</button>
+
+{/* Benefits section'a ID ekliyoruz */}
+<section id="benefits" className="min-h-screen ..."></section>
+        
+        
       </section> {/* Bu ilk ekranın bitişi */}
 
       {/* 2. Bölüm: Benefits Section */}
