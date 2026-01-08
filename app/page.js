@@ -95,7 +95,7 @@ export default function HangingList() {
         <div className="mt-4 w-full max-w-4xl bg-zinc-900/50 border-2 border-zinc-800 rounded-3xl aspect-video flex flex-col items-center justify-center shadow-2xl overflow-hidden relative">
           {status === "idle" && (
             <div className="text-center">
-              <div className="text-zinc-700 italic uppercase mb-2">Ready for today's challenge?</div>
+              <div className="text-2xl md:text-3xl text-zinc-500 font-bold italic uppercase mb-4">Ready for today's challenge?</div>
             </div>
           )}
 
