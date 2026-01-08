@@ -178,7 +178,7 @@ export default function HangingList() {
       {/* 2. Bölüm: Benefits Section */}
       <section className="min-h-screen w-full max-w-5xl py-20 px-6 border-t border-zinc-900">
         <h2 className="text-4xl md:text-6xl font-black text-white uppercase italic mb-12 tracking-tighter">
-          The benefits
+          The <span className="text-yellow-500">benefits</span>
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -208,6 +208,53 @@ export default function HangingList() {
             <p className="text-zinc-400 leading-relaxed">
               Boost mental focus by acting as a form of active meditation, teaching you to stay calm under physical discomfort, building willpower, and improving breath control, which carries over into everyday stress management and concentration
             </p>
+          </div>
+        </div>
+      </section>
+      {/* 3. Bölüm: How It Works Section */}
+      <section className="min-h-screen w-full max-w-5xl py-20 px-6 border-t border-zinc-900">
+        <h2 className="text-4xl md:text-6xl font-black text-white uppercase italic mb-16 tracking-tighter">
+          How it <span className="text-yellow-500">works</span>
+        </h2>
+
+        <div className="flex flex-col gap-16">
+          {/* Adım 1 */}
+          <div className="flex flex-col md:flex-row items-start gap-8 group">
+            <div className="text-7xl md:text-9xl font-black text-zinc-900 group-hover:text-yellow-500 transition-colors duration-500 leading-none">
+              1
+            </div>
+            <div className="flex-1">
+              <h3 className="text-2xl font-bold uppercase mb-4 tracking-widest text-yellow-500">Pick Your Song</h3>
+              <p className="text-zinc-400 text-lg leading-relaxed max-w-2xl">
+                Choose a track from 'The List' based on your difficulty level.
+              </p>
+            </div>
+          </div>
+
+          {/* Adım 2 */}
+          <div className="flex flex-col md:flex-row items-start gap-8 group">
+            <div className="text-7xl md:text-9xl font-black text-zinc-900 group-hover:text-yellow-500 transition-colors duration-500 leading-none">
+              2
+            </div>
+            <div className="flex-1">
+              <h3 className="text-2xl font-bold uppercase mb-4 tracking-widest text-yellow-500">Hang & Record</h3>
+              <p className="text-zinc-400 text-lg leading-relaxed max-w-2xl">
+                Jump up to the bar and hang until the song ends (or for as long as you can hold on).
+              </p>
+            </div>
+          </div>
+
+          {/* Adım 3 */}
+          <div className="flex flex-col md:flex-row items-start gap-8 group">
+            <div className="text-7xl md:text-9xl font-black text-zinc-900 group-hover:text-yellow-500 transition-colors duration-500 leading-none">
+              3
+            </div>
+            <div className="flex-1">
+              <h3 className="text-2xl font-bold uppercase mb-4 tracking-widest text-yellow-500">Upload & Track</h3>
+              <p className="text-zinc-400 text-lg leading-relaxed max-w-2xl">
+                Submit your time and video proof, then watch your growth unfold on your profile, second by second. Just a heads up: if you hang for more than 10 minutes, we might have to ask for video proof -just to make sure you’re human!
+              </p>
+            </div>
           </div>
         </div>
       </section>
