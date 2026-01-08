@@ -96,7 +96,6 @@ export default function HangingList() {
           {status === "idle" && (
             <div className="text-center">
               <div className="text-zinc-700 italic uppercase mb-2">Ready for today's challenge?</div>
-              <div className="text-yellow-500 font-bold underline">{activeSong?.title || "Select a Level"}</div>
             </div>
           )}
 
