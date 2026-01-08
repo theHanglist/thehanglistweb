@@ -173,7 +173,46 @@ export default function HangingList() {
         <div className="mt-auto mb-10 animate-bounce text-zinc-600 text-xs uppercase tracking-[0.3em]">
           Scroll for benefits ↓
         </div>
+      </section> {/* Bu ilk ekranın bitişi */}
+
+      {/* 2. Bölüm: Benefits Section */}
+      <section className="min-h-screen w-full max-w-5xl py-20 px-6 border-t border-zinc-900">
+        <h2 className="text-4xl md:text-6xl font-black text-white uppercase italic mb-12 tracking-tighter">
+          The benefits
+        </h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Benefit 1 */}
+          <div className="bg-zinc-900/30 border border-zinc-800 p-8 rounded-3xl hover:border-yellow-500/50 transition-colors">
+            <div className="text-yellow-500 text-3xl mb-4 font-black">🦴</div>
+            <h3 className="text-xl font-bold mb-4 uppercase tracking-wider">Spinal Decompression</h3>
+            <p className="text-zinc-400 leading-relaxed">
+              Hours of sitting compress your spine. A simple 2-minute hang flips the script on gravity and decompresses your back
+            </p>
+          </div>
+
+          {/* Benefit 2 */}
+          <div className="bg-zinc-900/30 border border-zinc-800 p-8 rounded-3xl hover:border-yellow-500/50 transition-colors">
+            <div className="text-yellow-500 text-3xl mb-4 font-black">🖐️ 💪</div>
+            <h3 className="text-xl font-bold mb-4 uppercase tracking-wider">Grip & Shoulder Decompression</h3>
+            <p className="text-zinc-400 leading-relaxed">
+              Grip strength is the ultimate health indicator. Stabilize your shoulders and unlock real functional strength
+            </p>
+          </div>
+
+          {/* Benefit 3 */}
+          <div className="bg-zinc-900/30 border border-zinc-800 p-8 rounded-3xl hover:border-yellow-500/50 transition-colors">
+            <div className="text-yellow-500 text-3xl mb-4 font-black">🧠</div>
+            <h3 className="text-xl font-bold mb-4 uppercase tracking-wider">Mental Focus
+</h3>
+            <p className="text-zinc-400 leading-relaxed">
+              Boost mental focus by acting as a form of active meditation, teaching you to stay calm under physical discomfort, building willpower, and improving breath control, which carries over into everyday stress management and concentration
+            </p>
+          </div>
+        </div>
       </section>
+
+
     </main>
   );
 }
